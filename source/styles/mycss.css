@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat Alternates&display=swap');
+body{
+    background: linear-gradient(90deg,rgb(65, 32, 2) 0%,#50371f 100%);
+    font-family: Montserrat Alternates;
+    font-size: 1.2em;
+}
+p{
+    color: white;
+}
+.navbar-light{
+    background-color: #00000033;
+}
+.navbar-nav>.nav-item>.nav-link{
+    color: rgb(133, 133, 133);
+}
+.navbar-nav>.nav-item>.nav-link.active{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.container-fluid>.navbar-brand{
+    color: white;
+}
+.navbar-brand img{
+    width: 50px;
+    margin-right: 1rem;
+}
+.navbar-toggler{
+    border: none;
+    background-color: #d1d1d1;
+}
+.card-title{
+    text-align: center;
+    font-size: 1.5em;
+}
+.card{
+    box-shadow: 0px 0px 14px 3px #000000;
+    background-color: #000000;
+    color: white;
+    background: radial-gradient(#703906 20%,#000000 100%);
+}
+.card a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background: radial-gradient(#703906 10%,#000000 90%);
+    border-color: #ffffff;
+    padding-inline: 30px;
+    width: 200px;
+    margin-top: 1em;
+    color: white;
+}
+.right-panel{
+    border-left: 1px solid rgb(255, 255, 255);
+}
+.card .card-body:hover,
+.card img:hover,
+.btn:hover,
+.right-bar p:hover{
+    animation: card-hover-animation 0.5s ease 0s 1 normal forwards;
+    border-color: rgb(95, 95, 95);
+}
+@keyframes card-hover-animation {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+	15% {
+		transform: translateX(-10px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(5px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-5px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(3px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-2px) rotate(-1.2deg);
+	}
+}
+.right-bar{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg,#496331 0%,#2e1f83 100%);
+    box-shadow: 0px 0px 10px 1px #000000;
+
+}
+.right-bar a{
+    color: lightblue;
+}
+.right-bar p:hover{
+    animation: card-hover-animation 0.5s ease 0s 1 normal forwards;
+}
+.slide-text,
+.footer-text{
+    color: white;
+    margin: auto auto;
+
+}  
+@media (max-width: 991px){
+    .right-panel{
+        border-left: none;
+    }
+} 
+@media(max-width: 755px){
+    .carousel-indicators{
+        display: none;
+    }
+}
+.phone-icon{
+    animation: phone-animation 0.5s ease 0s infinite;
+    cursor: pointer;
+}
+@keyframes phone-animation {
+	0%,
+	100% {
+		transform: translateY(5px);
+	}
+	20% {
+		transform: translateY(-5px);
+	}
+	40% {
+		transform: translateY(5px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
+	80% {
+		transform: translateY(5px);
+	}
+	
+}
+footer{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding-block: 1rem;
+    margin-top: 1rem;
+    background-color: #00000033;
+}
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExampleIndicators{
+    background: radial-gradient(#703906 20%,#000000 100%);
+    box-shadow: 0px 0px 14px 3px #000000;
+}
